@@ -17,4 +17,4 @@ Place all written answers from `recitation-07.md` here for easier grading.
 
 - **6)** Because of memoization, each fibonnaci number is only computed at most once, since once it's computed, it's stored in fibs[i] and never recomputed. The work would be W(n) = O(n) since each value is only computed once, and span would be S(n) = S(n-1) + O(1) = O(n) as we still need to computer fib(n-1) before fib(n).
 
-- **8)**
+- **8)** The maximum amount of times that any particular Fi will be read is twice, once in fibs[i-1] and once in fibs[i-2]. The loop runs for n-1 iterations, where each iteration includes 2 reads, 1 write and 1 read, all have constant time so W(n) = O(n). Span would be S(n) = S(n-1) + O(1) = O(n) as we still need to computer fib(n-1) and fib(n-2) before fib(n).
